@@ -1,4 +1,4 @@
-# C Number Guessing Game
+# Number Guessing Game
 
 Console-based number guessing game written in C. This is my first attempt at building something in a programming language.
 
