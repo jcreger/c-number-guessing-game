@@ -6,6 +6,15 @@ Command-line number guessing game written in C. This is my first attempt at buil
 
 The program generates a number between 0-45, and the player has 5 attempts to guess correctly. Each attempt the player is notified whether their guess was too high or too low. If the player uses all 5 of their attempts and fails to guess the correct number, they will be given the correct number and the program will exit. If the player guesses the correct number they will be congratulated and the program will exit.
 
+## Building
+
+Built and tested using GCC. Currently only works on Windows due to including `<windows.h>`.
+
+```powershell
+gcc main.c -o main.exe
+.\main.exe
+```
+
 ## Notes
 
 Before starting this project, I watched a 2 hour long video going over the basics of C. This video covered a lot of topics not covered in this project, but upon starting this project I quickly began to realize how much I didn't fully understand. There were 2 main pain points in building this project which required some research and experimentation outside of struggling with nvim and terminal:
@@ -22,13 +31,4 @@ The fix to this issue was to create a while loop in the if statement using `getc
 
 ```
 keyboard input -> stdin buffer -> scanf() reads from buffer -> writes to variable if matched
-```
-
-## Building
-
-Built and tested using GCC. Currently only works on Windows due to including `<windows.h>`.
-
-```powershell
-gcc main.c -o main.exe
-.\main.exe
 ```
